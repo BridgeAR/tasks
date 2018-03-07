@@ -60,3 +60,7 @@ modules.
    Reason: This allows to have a much more efficient way to check if an Array
            or TypedArray has keys besides the regular 0-n. Otherwise this can
            result in a huge performance overhead that is not necessary at all.
+1. Add a `Object.getNumberOfOwnProperties` to the language.
+   Reason: Often it is not necessary to get the properties itself but only the
+           number of the properties. This is for example important in case of
+           object comparisons.
